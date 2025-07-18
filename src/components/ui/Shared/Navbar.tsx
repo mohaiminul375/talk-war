@@ -38,7 +38,7 @@ const Navbar = () => {
     const pathname = usePathname();
 
     return (
-        <header className="flex h-16 w-full items-center px-4 md:px-6 shadow-2xl bg-foreground fixed top-0 z-50">
+        <header className="flex h-16 w-full items-center px-4 md:px-6 shadow-2xl bg-foreground fixed top-0">
             {/* Mobile Menu Icon */}
             <div className="lg:hidden mr-4">
                 <Sheet>
@@ -119,7 +119,7 @@ const Navbar = () => {
                     </DropdownMenu>
                 ) : (
                     <>
-                        <Link className="mx-2 text-white" href="/register">
+                        <Link className="mx-2 text-black" href="/register">
                             Register
                         </Link>
                         <Link href="/login">
